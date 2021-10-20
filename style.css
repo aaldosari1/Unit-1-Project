@@ -17,13 +17,7 @@ body, html {
   }
 .hero-image {          /* https://vistapointe.net/cliparts/getsecond */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/breaking-bad-5.jpg");
-    width:100%
-    min-height: 225px;
-    justify-content:center;
-    align-items:center;
-        margin-left: auto;
-        margin-right:auto;
-    display: flex;
+    height:40%;
   }
 
  /* <!--source https://www.w3schools.com/howto/howto_css_hero_image.asp-->*/
@@ -55,7 +49,7 @@ body, html {
 
   .topnav {
     overflow: hidden;
-    background-color: #64af27;
+    background-color: #807b7b;
     
   }
   .topnav {
