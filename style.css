@@ -53,14 +53,19 @@ body, html {
 
   .topnav {
     overflow: hidden;
-    background-color: #e9e9e9;
-    border-radius: 16px;
+    background-color: #807b7b;
+    
+  }
+  .topnav {
+    position:-webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 3;
   }
 
-  .hero-image{
+  
 
-    border-radius: 16px;
-  }
+  
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -81,7 +86,7 @@ body, html {
   
   /* Style the "active" element to highlight the current page */
   .topnav a.active {
-    background-color: #2196F3;
+    background-color: #202022;
     color: white;
   }
   
@@ -121,9 +126,10 @@ text-align:center;
 
 #srch{
 
-  background-color: #f44336;
+  background-color: #202022;
   font-size: 16px;
   padding: 12px 24px;
+  color: #f3ecec;
 
 }
 .picB{
@@ -204,6 +210,9 @@ text-align:center;
       margin:0;
       padding: 14px;
       
+    }
+    img {
+      width:100%;
     }
     
     
