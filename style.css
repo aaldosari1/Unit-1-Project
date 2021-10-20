@@ -104,8 +104,8 @@ body, html {
 
   img{
     border-radius: 8px; /*https://www.w3schools.com/css/css3_images.asp*/
-    width:460px;
-    height: 544px;  
+    width:360px;
+    height: 440px;  
     overflow: hidden;
     position: relative;
     margin: 10px 10px 10px 15px;
