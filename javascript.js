@@ -13,9 +13,11 @@ fetch('https://www.breakingbadapi.com/api/characters')
    // console.log(ch[0].gender);
     const myDiv = document.querySelector("#container");
     const myDiv2 = document.querySelector("#container2");
+    const myDiv3 = document.querySelector("#container3");
     myDiv2.style.display="none" //source https://www.w3schools.com/Jsref/prop_style_displa
 
     btns=[]
+    btns1=[]
   
     for(let i=0; i<ch.length; i++){
                                                        //  let n=ch[i].name
@@ -27,11 +29,15 @@ fetch('https://www.breakingbadapi.com/api/characters')
         const text = document.createElement("h4")
         const text1 = document.createElement("p")
         const btn = document.createElement("button")
+        const btn1= document.createElement("button")
         const srchFld = document.querySelector("#srchFld")
         const sechBtn=document.querySelector("#srch")
         const AboutBtn=document.querySelector("#About")
+        const Favo = document.querySelector("#Favorite")
+        const Home = document.querySelector("#Home")
         //const sechBtn1=document.querySelector("#srch1")
-        btn.innerText="More info"
+        btn.innerText="More  info"
+        btn1.innerText="Add to Favorite"
         text.innerText = ch[i].name;
         text1.innerText = "Occupation: "+ch[i].occupation[0];
         img.src = ch[i].img
@@ -39,13 +45,16 @@ fetch('https://www.breakingbadapi.com/api/characters')
         myDiv.className="newD"
         btn.className="picB"
         myDiv2.className="newD"
-    
+        myDiv3.className="newD"
+        btn1.className="picBA"
         btns[i]=btn
+        btns1[i]=btn1
         
         divs.append(img)
         newDiv.append(text)
         newDiv.append(text1)
         newDiv.append(btn)
+        newDiv.append(btn1)
         divs.append(newDiv)
         myDiv.append(divs)
         const pop1=document.getElementById("1")
@@ -70,6 +79,33 @@ fetch('https://www.breakingbadapi.com/api/characters')
 
           modal.style.display = "block";
         });
+
+        btns1[i].addEventListener("click", function() {
+              text.innerText = ch[i].name
+              img.src = ch[i].img
+              divs.append(img)
+              newDiv.append(text)
+              //newDiv.append(text1)
+              newDiv.append(btn)
+              divs.append(newDiv)
+              myDiv3.append(divs)
+              
+          
+          alert("Added to favorit");
+          
+         });
+
+         Favo.addEventListener("click", function() {
+         
+          myDiv3.style.display="grid" 
+            myDiv2.style.display="none"
+            myDiv.style.display="none"
+     });
+     Home.addEventListener("click", function() {
+      myDiv3.style.display="none" 
+        myDiv2.style.display="none"
+        myDiv.style.display="grid"
+ });
 
         AboutBtn.addEventListener("click", function() {
           

@@ -1,5 +1,5 @@
 
-#container,#container2{
+#container,#container2, #container3 {
 
     display: grid;
 
@@ -16,7 +16,7 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
   }
 .hero-image {          /* https://vistapointe.net/cliparts/getsecond */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("breaking-bad-5.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/breaking-bad-5.jpg");
     height: 50%;
    
     background-position: center;
@@ -139,7 +139,7 @@ text-align:center;
   
 
 }
-.picB{
+.picB, .picBA{
   background-color: #f0c472;
   font-size: 16px;
   padding: 9px 50px;
