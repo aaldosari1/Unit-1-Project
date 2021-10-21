@@ -1,0 +1,251 @@
+
+#container,#container2, #container3 {
+
+    display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center; /*https://stackoverflow.com/questions/45536537/centering-in-css-grid*/
+  grid-gap: 40px  0px;
+  
+
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.hero-image {          /* https://vistapointe.net/cliparts/getsecond */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/breaking-bad-5.jpg");
+    height: 50%;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+ /* <!--source https://www.w3schools.com/howto/howto_css_hero_image.asp-->*/
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+    
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #807b7b;
+    
+  }
+  .topnav {
+    position:-webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 3;
+  }
+
+  
+
+  
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    background-color: #202022;
+    color: white;
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+
+
+  img{
+    border-radius: 8px; /*https://www.w3schools.com/css/css3_images.asp*/
+    max-width:420px; /* https://stackoverflow.com/questions/25024627/cant-resize-image-using-css*/
+    height: 550px;  
+    overflow: hidden;
+    position: relative;
+    margin: 10px 10px 10px 15px;
+    
+
+  }
+
+  .id{
+
+    border-style: solid; /*https://www.w3schools.com/css/css_border.asp */
+    border-color: blanchedalmond;
+    background-color: blanchedalmond;
+    border-radius: 8px;
+    max-width: 100%;
+    
+    
+  }
+
+.newD{
+text-align:center;
+}
+
+#srch{
+
+  background-color: #202022;
+  font-size: 16px;
+  padding: 12px 24px;
+  color: #f3ecec;
+  float:right;
+  
+
+}
+.picB, .picBA{
+  background-color: #f0c472;
+  font-size: 16px;
+  padding: 9px 50px;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  
+}
+
+.topnav{
+
+  margin-bottom: 30px;
+}
+
+  /*important link https://stackoverflow.com/questions/24408966/html-css-picture-with-a-text-box-on-the-side*/
+
+  /* This for the pop up window*/
+  .modal, .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content, .modal-content1 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close, .close1{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close1:hover,
+  .close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+
+  @media screen and (max-width: 1410px) {
+    #container,#container2{
+      float: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      margin:0;
+      padding: 14px;
+      
+    }
+    img {
+      width:100%;
+    }
+    
+    
+  }
+
+  @media screen and (max-width: 920px) {
+    #container,#container2{
+      float: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      margin:0;
+      padding: 14px;
+      
+    }
+    img {
+      width:100%;
+    }
+    
+    
+  }
